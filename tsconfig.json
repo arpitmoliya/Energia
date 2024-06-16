@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "strictNullChecks": true  
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/scripts/updateExerciseDatabase.ts"],
   "exclude": ["node_modules"]
 }

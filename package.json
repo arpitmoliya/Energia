@@ -6,8 +6,8 @@
   "author": "arpitmoliya <arpitmoliya153@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon --watch 'src/**/*.ts' src/app.ts"
+    "start": "node -r dotenv/config dist/app.js",
+    "dev": "nodemon -r dotenv/config  src/app.ts"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
