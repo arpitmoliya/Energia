@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import logger from "../utils/logger";
 
 mongoose.connect(process.env.MONGODB_URI || "").then(() => {
-  console.log("Database connected successfully!");
+  logger.info("Database connected successfully!");
 });
 
 const db = mongoose.connection;

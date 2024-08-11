@@ -1,7 +1,7 @@
 import { Document, Schema, model } from "mongoose";
 
 export interface IExercise extends Document {
-    id: String
+  id: String;
   name: string;
   bodyPart: string;
   equipment: string;

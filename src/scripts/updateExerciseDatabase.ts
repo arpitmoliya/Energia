@@ -1,6 +1,7 @@
 import axios from "axios";
 import mongoose from "mongoose";
 import Exercise, { IExercise } from "../models/Exercise";
+import "dotenv/config"
 
 const connectDB = async () => {
   try {
@@ -53,3 +54,5 @@ export const updateExercise = async () => {
     mongoose.connection.close();
   }
 };
+
+updateExercise()
